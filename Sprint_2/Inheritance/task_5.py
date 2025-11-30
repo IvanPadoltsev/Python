@@ -22,7 +22,7 @@ class Autotester(Tester):
         self.tool = tool
 
     def test(self):
-        return f"Автотестировщик {self.name} проводит тестирование с момощью {self.tool}"
+        return f"Автотестировщик {self.name} проводит тестирование с помощью {self.tool}"
     
 
 tester = Tester("Иван")
