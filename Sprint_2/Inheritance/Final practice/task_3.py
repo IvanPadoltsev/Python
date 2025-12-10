@@ -27,9 +27,9 @@ class Herbivore(Species):
 
     def grow(self):
         if self.food_availability >= 0.2:
-            self.population += self.growth_rate
+            self.population += self.growth_rate * self.population
             self.food_availability -= 0.15
-        elif self.food_availability <= 0.2:
+        else:
             Herbivore.migrate(self)
 
     def migrate(self):
